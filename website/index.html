@@ -4,55 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BROTHERR</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
   <style>
-    @font-face {
-      font-family: 'BiroScript';
-      src: url('assets/fonts/Biro_Script_reduced.otf') format('opentype'),
-           url('assets/fonts/Biro_Script_reduced.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: Georgia, serif;
-      background: #0e1a26;
-      color: #ccd6dd;
       overflow: hidden;
-    }
-
-    .nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 100;
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
-      padding: 1.4rem 2rem;
-    }
-
-    .nav a {
-      font-family: Georgia, serif;
-      font-size: 0.72rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #5274a1;
-      opacity: 1;
-      text-decoration: none;
-      transition: opacity 0.2s ease;
-    }
-
-    .nav a:hover,
-    .nav a.active {
-      opacity: 1;
     }
 
     .hero {
@@ -102,7 +57,7 @@
       font-size: clamp(1.6rem, 5vw, 4rem);
       font-weight: normal;
       letter-spacing: 0.08em;
-      color: #ccd6dd;
+      color: var(--sky-light);
       text-shadow: 0 2px 40px rgba(37, 150, 190, 0.22), 0 1px 12px rgba(10, 22, 42, 0.5);
       user-select: none;
     }
@@ -117,7 +72,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #ccd6dd;
+      color: var(--sky-light);
       opacity: 0.65;
       transition: opacity 0.22s ease, color 0.22s ease, transform 0.22s ease;
       text-decoration: none;
@@ -125,7 +80,7 @@
 
     .socials a:hover {
       opacity: 1;
-      color: #2596be;
+      color: var(--sky-bright);
       transform: translateY(-2px);
     }
 
