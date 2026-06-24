@@ -48,7 +48,7 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <style>
     body {
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     .hero {
@@ -130,6 +130,73 @@
       height: 22px;
       fill: currentColor;
     }
+
+    /* Upcoming Release */
+    .upcoming-release {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5rem 2rem 4rem;
+      background: var(--night);
+    }
+
+    .upcoming-release h2 {
+      font-family: Georgia, serif;
+      font-size: 0.72rem;
+      font-weight: normal;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--sky-mid);
+      margin-bottom: 2.5rem;
+    }
+
+    .release-card {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      max-width: 640px;
+    }
+
+    .release-card img {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+    }
+
+    .release-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .release-info .release-title {
+      font-family: Georgia, serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: var(--sky-light);
+    }
+
+    .release-info .release-date {
+      font-family: Georgia, serif;
+      font-size: 0.95rem;
+      color: var(--sky-mid);
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 600px) {
+      .release-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .release-card img {
+        width: 200px;
+        height: 200px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -170,6 +237,17 @@
         </a>
 
       </nav>
+    </div>
+  </section>
+
+  <section class="upcoming-release">
+    <h2>Upcoming Releases</h2>
+    <div class="release-card">
+      <img src="assets/images/sbrot-cover.jpg" alt="She'll Be Right on Time — album cover" />
+      <div class="release-info">
+        <span class="release-title">She'll Be Right on Time</span>
+        <span class="release-date">July 21, 2026</span>
+      </div>
     </div>
   </section>
 
